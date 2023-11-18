@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>小煞部</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .gallery {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 15px;
+        }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out;
+            }
+
+                .gallery img:hover {
+                    transform: scale(1.05);
+                }
+    </style>
+</head>
+<body>
+    <h1>你说得对，但是虎哥是由一款鹦鹉开发的老虎</h1>
+    <div class="gallery">
+        <!-- 替换以下链接为你的图片链接 -->
+        <img src="img/huger/1.jpg" alt="Image 1">
+        <img src="img/huger/2.jpg" alt="Image 2">
+        <img src="img/huger/3.jpg" alt="Image 3">
+        <img src="img/huger/4.jpg" alt="Image 4">
+        <img src="img/huger/5.jpg" alt="Image 5">
+        <img src="img/huger/6.jpg" alt="Image 6">
+        <img src="img/huger/7.jpg" alt="Image 7">
+        <!-- 添加更多图片 -->
+    </div>
+</body>
+</html>

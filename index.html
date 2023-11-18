@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Made BY Genshit</title>
+    <style>
+        body {
+            background-image: url('img/bg1.jpg'); 
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">期中成绩查询</h1>
+    <div class="container">
+        <input type="text" id="studentName" placeholder="输入学生姓名">
+        <input type="text" id="studentId" placeholder="输入学号">
+        <button onclick="validateAndRedirect()">点击查询</button>
+    </div>
+    <script>function validateAndRedirect() {
+            var name = document.getElementById('studentName').value;
+            var id = document.getElementById('studentId').value;
+            if (!name || !id) {
+                alert('请完善学生信息');
+            } else {
+                // Redirect to the new page
+                window.location.href = 'album.html'; // 替换成你的新页面的URL
+            }
+        }</script>
+</body>
+</html>
